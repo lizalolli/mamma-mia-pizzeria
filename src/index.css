@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+/* Color palette */
+/* #F92B59 pink red
+#574142 brown
+#BFA5A5 light brown
+#760000 dark red
+#F3EED9 white
+#1ABEBA turquoise
+#00696C dark turquoise
+#C0FCF8 light turquoise */
+
+#root {
+  margin: 0;
+  padding: 0;
+  max-width: unset;
+}
+
+body {
+  font-family: "Fredoka", sans-serif;
+  background-color: #574142 !important;
+  color: #F3EED9 !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  color: #F3EED9 !important;
+}
+
+.baseLink {
+  font-size: 20px;
+  color: #F3EED9;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.baseLink:hover {
+  color:#fdc3d0;
+}
+
+.active {
+  font-weight: 700;
+}
+
+.inactive {
+  color: gray;
+}
+
+.card-img-top {
+  width: 30%;
+}
+
+.card-img {
+  border-radius: 6px 6px 0px 0px !important;
+}
+
+.card {
+  padding: 0;
+  border: none !important;
+  background-color: #F3EED9 !important;
+  color: #574142 !important;
+}
+
+.cardContent {
+  margin: 0 auto;
+}
+
+.card-body {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  padding:0;
+  margin:0;
+}
+
+nav {
+  background-color: #F92B59;
+}
+
+.btn-pizza {
+  text-decoration: none;
+  color: #F3EED9;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.btn-cart {
+  background-color: #1ABEBA;
+}
+
+.btn-cart:hover {
+  background-color: #00696C;
+}
+
+.btn-details {
+  background-color: #F92B59;
+}
+
+.btn-details:hover {
+  background-color: #c33252;
+}
+
+select {
+  color: #474554;
+}
+
+li {
+  font-size: 20px;
+}
+
+li::marker {
+  color:#1ABEBA;
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .card-img-top {
+    width: 80%;
+  }
+  .btn-back {
+    margin-bottom: 50px;
+  }
+  li {
+    font-size: 20px;
+  }
+}
+
+.bannerContainer {
+  height: 400px;
+  background-image: url('assets/pizzabg2.jpeg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.bannerTitle {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pizzaTitle {
+  border-bottom: 2px solid #574142;
+}
+
+.pizzaPrice {
+  border-top: 2px solid #574142;
+  border-bottom: 2px solid #574142;
+}
+
+.infoPizza {
+  background-color: #F3EED9;
+  color: #574142;
+  border-radius: 0px 6px 6px 0px; 
+}
+
+.pizzaDetailsImg {
+  border-radius: 6px 0px 0px 6px;
+}
+
+.cartList {
+  list-style-type: none;
+  background-color: #F3EED9;
+  color: #574142;
+  border-radius: 6px;
+}
+
+.pizzaCartImg {
+  height: 100px;
+  border-radius: 6px 0px 0px 6px;
+}
+
+.pizzaCartTitle {
+  color: #574142 !important;
+  margin: 0;
+}
+
+.cartCount {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: #C0FCF8;
+  color: #574142;
+  font-size: 10px;
+  font-weight: 700;
+  top: 0;
+  right: 0;
+}
