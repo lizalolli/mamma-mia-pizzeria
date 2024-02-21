@@ -6,7 +6,7 @@ import AddToCartButton from './AddToCartButton';
 
 export const Gallery = () => {
 
-    const { pizzas, isLoading, CapitalizeString, addToCart, cart } = useContext(PizzaContext);
+    const { pizzas, isLoading, CapitalizeString } = useContext(PizzaContext);
 
     const navigate = useNavigate();
 
@@ -36,10 +36,7 @@ export const Gallery = () => {
                                     </div>
                                     <h2 className='pizzaPrice my-3 py-3 mx-3 fw-bold'>${pizza.price}</h2>
                                     <div className="pizzaButtons mt-2 mb-4">
-                                        <button
-                                            onClick={() => goToDetails(pizza.id)}
-                                            className='btn-pizza btn-details py-3 px-3 me-3'
-                                        >
+                                        <button onClick={() => goToDetails(pizza.id)} className='btn-pizza btn-details py-3 px-3 me-3'>
                                             Ver más
                                         </button>
                                         {/* función de flecha para evitar que se ejecute si no se cliquea el botón */}
