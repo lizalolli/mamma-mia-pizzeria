@@ -125,22 +125,6 @@ li::marker {
   color:#1ABEBA;
 }
 
-@media (max-width: 768px) {
-  .card-body {
-    flex-direction: column;
-    margin-bottom: 50px;
-  }
-  .card-img-top {
-    width: 80%;
-  }
-  .btn-back {
-    margin-bottom: 50px;
-  }
-  li {
-    font-size: 20px;
-  }
-}
-
 .bannerContainer {
   height: 400px;
   background-image: url('assets/pizzabg2.jpeg');
@@ -201,4 +185,48 @@ li::marker {
   font-weight: 700;
   top: 0;
   right: 0;
+}
+
+.pizzaBtnQuantity {
+  font-size: 16px;
+  color:#F3EED9;
+  font-weight: bold;
+  background-color: #F92B59;
+  border: none;
+  padding:10px;
+}
+
+.pizzaBtnIncrease {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.pizzaBtnDecrease {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.quantityContainer {
+  border-top: 1px solid #574142;
+  border-bottom: 1px solid #574142;
+  padding: 9px;
+}
+
+.pizzaCartPrice {
+  color:#F92B59 !important;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .card-img-top {
+    width: 80%;
+  }
+  li {
+    font-size: 20px;
+  }
+  .bannerContainer {
+    background-size: 120%;
+  }
 }

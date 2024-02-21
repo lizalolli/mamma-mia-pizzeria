@@ -16,13 +16,11 @@ export default function PizzaProvider({children}) {
 
     const addToCart = (pizza) => {
         const uniqueKey = `${pizza.id}-${cart.length}`;
-        const existingProduct = cart.find(item => item.id === pizza.id);
+        const existingPizza = cart.find(item => item.id === pizza.id);
 
-        // setCart([...cart, { ...pizza, key: uniqueKey }])
+        alert('Tu pizza ha sido añadida!')
 
-        alert('pizza añadida!')
-
-        if (existingProduct) {
+        if (existingPizza) {
             // Si ya existe, incrementar el contador
             const updatedCart = cart.map(item =>
               item.id === pizza.id
@@ -33,7 +31,6 @@ export default function PizzaProvider({children}) {
             setCart(updatedCart);
 
           } else {
-            // Si no existe, añadir el producto con contador a 1
             setCart([...cart, { ...pizza, count: 1, key: uniqueKey }]);
           }
     }
